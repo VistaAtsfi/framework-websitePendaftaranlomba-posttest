@@ -1,3 +1,4 @@
+{% load static %} 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,15 @@
     <title>{% block title %}Website Pendaftaran Lomba{% endblock %}</title>
     {% load django_bootstrap5 %}
     {% bootstrap_css %}
+    <style>
+        body {
+            background-image: url('{% static "images/bunga.jpg" %}');
+            background-size: cover; /* untuk menyesuaikan gambar dengan ukuran layar */
+            background-repeat: no-repeat; /* untuk mencegah pengulangan gambar */
+            background-position: center; /* untuk memusatkan gambar */
+        }
+    </style>
+    
 </head>
 <body>
     <!-- Navbar -->
