@@ -1,0 +1,27 @@
+{% extends "homepage/base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center">Formulir Pendaftaran Lomba</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="nama" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="nama" name="nama" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="lomba" class="form-label">Pilih Lomba</label>
+            <select class="form-select" id="lomba" name="lomba" required>
+                <option value="Lomba Menulis Cerpen">Lomba Menulis Cerpen</option>
+                <option value="Lomba Fotografi">Lomba Fotografi</option>
+                <option value="Lomba Debat">Lomba Debat</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success">Daftar Sekarang</button>
+    </form>
+</div>
+{% endblock %}

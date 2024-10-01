@@ -1,0 +1,40 @@
+{% extends "homepage/base.html" %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://via.placeholder.com/350x200?text=Lomba+Menulis+Cerpen" class="card-img-top" alt="Lomba Menulis Cerpen">
+                <div class="card-body">
+                    <h5 class="card-title">Lomba Menulis Cerpen</h5>
+                    <p class="card-text">Tunjukkan kreativitasmu dalam menulis cerita pendek. Tema bebas!</p>
+                    <a href="{% url 'daftar_lomba' %}" class="btn btn-success">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://via.placeholder.com/350x200?text=Lomba+Fotografi" class="card-img-top" alt="Lomba Fotografi">
+                <div class="card-body">
+                    <h5 class="card-title">Lomba Fotografi</h5>
+                    <p class="card-text">Abadikan momen terbaik dan jadilah pemenang dalam lomba ini!</p>
+                    <a href="{% url 'daftar_lomba' %}" class="btn btn-primary">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://via.placeholder.com/350x200?text=Lomba+Debat" class="card-img-top" alt="Lomba Debat">
+                <div class="card-body">
+                    <h5 class="card-title">Lomba Debat</h5>
+                    <p class="card-text">Buktikan kemampuan berpikir kritis dan argumentasi dalam lomba ini.</p>
+                    <a href="{% url 'daftar_lomba' %}" class="btn btn-primary">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
