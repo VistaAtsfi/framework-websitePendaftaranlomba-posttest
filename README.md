@@ -1,6 +1,8 @@
 Nama: Vista Mellyna Atsfi
 Nim: 2209106096
 
+#Posttest 4 ada di bawah
+
 # Administration django
 
 #Peserta
@@ -60,4 +62,38 @@ Otomatis membuat akun saat membuat peserta dan penyelenggara
 untuk gambar digunakan sebagai background:
 body {
             background-image: url('{% static "images/bunga.jpg" %}');
+
+
+
+#Posttest 4
+Read Daftar Lomba
+![image](https://github.com/user-attachments/assets/4ac28b99-f265-4b42-af09-f0009a1b6235)
+![image](https://github.com/user-attachments/assets/6efbd545-bcda-48f6-8494-056e7a9025c1)
+
+Create, Tambah Lomba
+![image](https://github.com/user-attachments/assets/7ca122df-682c-4551-a980-2be0f1b46260)
+![image](https://github.com/user-attachments/assets/f21e715a-1b02-4286-99e6-6d28382b8fb5)
+![image](https://github.com/user-attachments/assets/88468552-01d7-49b5-82d5-61e27977b72d)
+![image](https://github.com/user-attachments/assets/a2876aa8-4b5d-483c-b998-0a897dfcb836)
+![image](https://github.com/user-attachments/assets/f6bef78d-bb82-474d-a1ef-72260d430a63)
+
+Update, Ubah Lomba
+Data Awal:![image](https://github.com/user-attachments/assets/2d80638e-dec3-48a0-a9ad-521440875c5e)
+Proses Ubah: ![image](https://github.com/user-attachments/assets/d9c12248-d2a5-435a-b7e8-87d79dee098d)
+Setelah diubah: ![image](https://github.com/user-attachments/assets/7b6696a4-6a8b-4c5b-92b1-d3912fa1d254)
+![image](https://github.com/user-attachments/assets/66b8cd3e-4d2d-46d3-ae6a-a075ed1e3c5d)
+
+Delete Lomba
+Hapus Lomba Tidur: ![image](https://github.com/user-attachments/assets/d51270e3-814f-4f83-a711-836cde8db044)
+![image](https://github.com/user-attachments/assets/ae48368a-7dde-4305-870a-f7c01fb1e347)
+Lomba Tidur Telah Terhapus:![image](https://github.com/user-attachments/assets/180d2f98-79a6-44da-ab2d-069c961f55da)
+![image](https://github.com/user-attachments/assets/4b31a680-f1b4-44d2-b75a-46f3d28bd3d5)
+
+Search
+![image](https://github.com/user-attachments/assets/e8a57740-15f5-4b64-8a42-d2f595286082)
+
+Table Lomba:
+![image](https://github.com/user-attachments/assets/082d5077-ee30-4850-8352-de7210ec3e5f)
+
+
 
