@@ -1,0 +1,16 @@
+{% extends 'homepage/base.html' %}
+
+{% block title %} Ubah Lomba {% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="d-flex align-items-center justify-content-between">
+        <h1>Ubah Lomba: {{ lomba.nama }}</h1>
+        <a href="{% url 'lomba_index' %}" class="btn btn-secondary">Kembali</a>
+    </div>
+    <form class="needs-validation" method="POST">
+        {% csrf_token %}
+        {% include 'lomba/form.html' %}
+    </form>
+</div>
+{% endblock %}

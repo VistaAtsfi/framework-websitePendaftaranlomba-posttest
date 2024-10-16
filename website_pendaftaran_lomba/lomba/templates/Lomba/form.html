@@ -1,0 +1,43 @@
+{% csrf_token %}
+<!-- Nama Lomba Field -->
+<div class="mb-3">
+    <label for="id_nama" class="form-label">Nama Lomba</label>
+    <input type="text" class="form-control" id="id_nama" name="nama" value="{{ form.nama.value|default_if_none:'' }}" required>
+    <div class="invalid-feedback">{{ form.nama.errors }}</div>
+</div>
+
+<!-- Jenis Lomba Field -->
+<div class="mb-3">
+    <label for="id_jenis_lomba" class="form-label">Jenis Lomba</label>
+    <input type="text" class="form-control" id="id_jenis_lomba" name="jenis_lomba" value="{{ form.jenis_lomba.value|default_if_none:'' }}" required>
+    <div class="invalid-feedback">{{ form.jenis_lomba.errors }}</div>
+</div>
+
+<!-- Tanggal Field -->
+<div class="mb-3">
+    <label for="id_tanggal" class="form-label">Tanggal</label>
+    <input type="date" class="form-control" id="id_tanggal" name="tanggal" value="{{ form.tanggal.value|default_if_none:'' }}" required>
+    <div class="invalid-feedback">{{ form.tanggal.errors }}</div>
+</div>
+
+<!-- Lokasi Field -->
+<div class="mb-3">
+    <label for="id_lokasi" class="form-label">Lokasi</label>
+    <input type="text" class="form-control" id="id_lokasi" name="lokasi" value="{{ form.lokasi.value|default_if_none:'' }}" required>
+    <div class="invalid-feedback">{{ form.lokasi.errors }}</div>
+</div>
+
+<!-- Jurusan Field -->
+<div class="mb-3">
+    <label for="id_jurusan" class="form-label">Jurusan</label>
+    <select class="form-select" id="id_jurusan" name="jurusan" required>
+        {% for jurusan in form.jurusan.field.queryset %}
+        <option value="{{ jurusan.id }}" {% if jurusan.id == form.jurusan.value|default_if_none:'' %}selected{% endif %}>
+            {{ jurusan.nama }}
+        </option>
+        {% endfor %}
+    </select>
+    <div class="invalid-feedback">{{ form.jurusan.errors }}</div>
+</div>
+
+<button type="submit" class="btn btn-primary">Simpan</button>
